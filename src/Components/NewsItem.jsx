@@ -6,7 +6,7 @@ const NewsItem = ({ title, description, src, url }) => {
 
   function handleImageError() {
     // You can do additional error handling logic here if needed
-    // For now, simply set the imageError flag to true
+    // For now, simply set the imageError flag to true 
     setImageError(true);
   }
 
