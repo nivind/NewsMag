@@ -6,7 +6,7 @@ const NewsItem = ({ title, description, src, url }) => {
 
   function handleImageError() {
     // You can do additional error handling logic here if needed
-    // For now, simply set the imageError flag to true 
+    // For now, simply set the imageError flag to true
     setImageError(true);
   }
 
@@ -27,7 +27,7 @@ const NewsItem = ({ title, description, src, url }) => {
           {title.slice(0, 50)}
         </h5>
         <p className="card-text" style={{ minHeight: "96px" }}>
-          {description
+          {description != null
             ? description.slice(0, 90)
             : "News having no description"}
         </p>
